@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Ives.Configuration.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Ives.Configuration.Testing", "R5T.Ives.Configuration.Testing\R5T.Ives.Configuration.Testing.csproj", "{D6579A3B-0F87-48E7-A449-510B3971310B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{56B98238-E977-407A-9665-FC488EBE065E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.T0064", "..\..\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj", "{528A0D69-EB14-461F-B714-4F0B78FF043D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +62,20 @@ Global
 		{D6579A3B-0F87-48E7-A449-510B3971310B}.Release|x64.Build.0 = Release|Any CPU
 		{D6579A3B-0F87-48E7-A449-510B3971310B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D6579A3B-0F87-48E7-A449-510B3971310B}.Release|x86.Build.0 = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|x64.Build.0 = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Debug|x86.Build.0 = Debug|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|x64.ActiveCfg = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|x64.Build.0 = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|x86.ActiveCfg = Release|Any CPU
+		{528A0D69-EB14-461F-B714-4F0B78FF043D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{528A0D69-EB14-461F-B714-4F0B78FF043D} = {56B98238-E977-407A-9665-FC488EBE065E}
 	EndGlobalSection
 EndGlobal

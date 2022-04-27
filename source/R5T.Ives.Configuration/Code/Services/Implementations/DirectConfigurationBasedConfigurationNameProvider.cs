@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Configuration;
+
+using R5T.T0064;
 
 
 namespace R5T.Ives.Configuration
@@ -10,7 +12,8 @@ namespace R5T.Ives.Configuration
     /// This is useful during two-stage application startup DI-container configuration. The initial stage can add the default appsettings.json file, in which is contained the name of the configuration that should be run.
     /// The configuration name specified in the default appsettings.json file can be used to add the appsettings.{configuration name}.json file to the configuration for the second-stage.
     /// </summary>
-    public class DirectConfigurationBasedConfigurationNameProvider : IConfigurationNameProvider
+    [ServiceImplementationMarker]
+    public class DirectConfigurationBasedConfigurationNameProvider : IConfigurationNameProvider, IServiceImplementation
     {
         public const string ConfigurationNameConfigurationKey = "ConfigurationName";
 
@@ -18,7 +21,8 @@ namespace R5T.Ives.Configuration
         private IConfiguration Configuration { get; }
 
 
-        public DirectConfigurationBasedConfigurationNameProvider(IConfiguration configuration)
+        public DirectConfigurationBasedConfigurationNameProvider(
+            IConfiguration configuration)
         {
             this.Configuration = configuration;
         }
